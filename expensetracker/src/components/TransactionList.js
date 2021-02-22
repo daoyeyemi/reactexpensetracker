@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const TransactionList = () => {
+const TransactionList = () => {
     return (
         <div>
             <h3>History</h3>
