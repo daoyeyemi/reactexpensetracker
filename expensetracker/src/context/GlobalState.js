@@ -35,7 +35,8 @@ function addTransaction(transaction) {
     <GlobalContext.Provider 
         value={{
         transactions: state.transactions,
-        deleteTransaction
+        deleteTransaction,
+        addTransaction
         }}>
         {children}
     </GlobalContext.Provider>)

@@ -5,9 +5,9 @@ const AddTransaction = () => {
     const [text, setText] = useState("");
     const [amount, setAmount] = useState(0);
 
-    const { addTransaction } = useContext(GlobalContext)
+    const { addTransaction } = useContext(GlobalContext);
 
-    function onSubmit(event) {
+    const onSubmit = event => {
         event.preventDefault();
 
         const newTransaction = {
@@ -18,6 +18,7 @@ const AddTransaction = () => {
 
         addTransaction(newTransaction);
     }
+    
     return (
         <div>
            <h3>Add new transaction</h3>
